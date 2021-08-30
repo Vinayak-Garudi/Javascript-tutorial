@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+</head>
+<style>
+    body{
+        background: url("/Img/bgimage1.jpg");
+        background-repeat: no-repeat;
+        background-size: 1320px 600px;
+    }
+
+    .container{
+        border: 2px  rgb(22, 8, 46);
+        margin: 170px 60px;
+        padding: 53px;
+        width: 30%;
+        border-radius: 20px;
+        background-color: #b8ddef;
+       
+    }
+
+    .left{
+         display: inline-block;
+        
+    }
+
+    .left h3{
+        font-family: fantasy;
+        font-style: italic;
+        font-size: 10px;
+        
+    }
+
+    .navbar{
+        
+        display: block;
+        width: 54%;
+        margin: -75px auto;
+        padding: 10px 40px;
+        font-size: 18px;
+        background: rgb(100 100 96);
+        border-radius: 10px;
+        
+    }
+
+    .navbar a{
+        padding: 27px;
+        text-decoration: none;
+        color: rgb(252, 241, 241);
+    }
+
+    .navbar a:hover{
+        background-color: rgb(66, 101, 151);
+        }
+
+    
+
+    .right{
+        
+        display: inline-block;
+        position: absolute;
+        right: 300px;
+        top: 43px;
+    }
+
+   .form-group input{
+       font-family: cursive;
+       text-align: center;
+       display: inline-block;
+       width: 200px;
+       padding: 1px;
+       border: 2px solid black;
+       margin: 0.5px auto;
+       margin-left: 5px;
+       font-size: 14px;
+       border-radius: 8px;
+   }
+    
+    
+</style>
+<body>
+    
+    <header class="header">
+        <div class="left">
+           <img src="/Img/booklogo.jpg" alt="booklogo" width="80px" height="60px">
+           <h3>Mitali's BookStore</h3>
+        </div>
+        
+        <div class="navbar">
+            
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                
+            
+        </div>
+
+        <div class="right">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </header>
+
+
+
+    <div class="container" >
+        <form action="noaction.php">
+            <div class="form-group">
+                Name:<input type="text" placeholder="Enter your name">
+            </div><br>
+
+            <div class="form-group">
+                Email:<input type="email" placeholder="Enter your email">
+            </div><br>
+
+            <div class="form-group">
+                Date of Birth:<input type="date" placeholder="DOB">
+            </div><br>
+
+            <div class="form-group">
+                Mobile Number:<input type="number" placeholder="Enter your Mobile Number">
+            </div><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
